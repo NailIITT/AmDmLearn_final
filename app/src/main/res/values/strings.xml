@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Guitar</string>
+    <string name="action_song">Песни</string>
+    <string name="action_chord">Аккорды</string>
+    <string name="action_info">Инфоромация</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_main3">Main3Activity</string>
+</resources>
