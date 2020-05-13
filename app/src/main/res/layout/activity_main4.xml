@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main4Activity"
+    android:background="@mipmap/fon_foreground"
+    >
+
+
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="25dp"
+        android:onClick="toDo"
+        android:text="Начать"
+        android:background="@drawable/button_costum"
+        />
+
+    <ImageButton
+        android:id="@+id/image"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_costum2"/>
+
+    <Button
+        android:id="@+id/am"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_costum2"
+        android:text="am" />
+
+    <Button
+        android:id="@+id/dm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/am"
+        android:text="dm" android:background="@drawable/button_costum2"/>
+
+    <Button
+        android:id="@+id/em"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dm"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/am"
+        android:background="@drawable/button_costum2"
+        android:onClick="toEm"
+        android:text="em" />
+
+    <Button
+        android:id="@+id/c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/em"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/dm"
+        android:background="@drawable/button_costum2"
+        android:text="c" />
+
+    <Button
+        android:id="@+id/e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/c"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/em"
+        android:background="@drawable/button_costum2"
+        android:text="e" />
+
+    <Button
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/e"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="-1dp"
+        android:layout_toRightOf="@+id/c"
+        android:background="@drawable/button_costum2"
+        android:text="a" />
+
+    <Button
+        android:id="@+id/d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/e"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/a"
+        android:background="@drawable/button_costum2"
+        android:text="d" />
+
+    <Button
+        android:id="@+id/g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/d"
+        android:layout_toRightOf="@+id/e"
+        android:text="g"
+        android:background="@drawable/button_costum2"/>
+
+
+</RelativeLayout>

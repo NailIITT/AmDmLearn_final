@@ -5,4 +5,7 @@
     <string name="action_info">Инфоромация</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_main3">Main3Activity</string>
+    <string name="LearnChords">Учим Аккорды</string>
+    <string name="Songs">Песни</string>
+    <string name="Game">Игра</string>
 </resources>

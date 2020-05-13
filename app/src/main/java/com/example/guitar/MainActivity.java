@@ -22,6 +22,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,44 +32,27 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        Button chords = (Button) findViewById(R.id.Chords);
+        Button songs = (Button) findViewById(R.id.Songs);
+        Button game = (Button) findViewById((R.id.Game));
 
 
     }
+    public void toDo(View v){
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+            Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+            startActivity(intent);
+
+    }
+    public void toDo2(View v){
+        Intent intent = new Intent(MainActivity.this, Main3Activity.class);
+        startActivity(intent);
+    }
+    public void toDo3(View v){
+        Intent intent = new Intent(MainActivity.this, Main4Activity.class);
+        startActivity(intent);
+
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_chord) {
-            Intent intent = new Intent(this, Main2Activity.class);
-            startActivity(intent);
-
-
-            return true; }
-        else if (id == R.id.action_song) {
-            Intent intent = new Intent(this, Main3Activity.class);
-            startActivity(intent);
-
-
-            return true; }
-
-
-
-
-
-                return super.onOptionsItemSelected(item);
-        }
 
 }
