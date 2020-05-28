@@ -6,26 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".Main2Activity"
     >
-    <ImageView
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        android:scaleType="fitXY"
-        android:src="@mipmap/fon_foreground"/>
+
+
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
-
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="#C76316"
+            app:layout_anchor="@+id/appBarLayout"
+            app:layout_anchorGravity="center"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
-    </com.google.android.material.appbar.AppBarLayout>
 
+    </com.google.android.material.appbar.AppBarLayout>
+    <ImageView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/fon_foreground"/>
     <include layout="@layout/content_main2" />
+
+
+
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

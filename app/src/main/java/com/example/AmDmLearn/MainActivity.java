@@ -1,4 +1,4 @@
-package com.example.guitar;
+package com.example.AmDmLearn;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -24,6 +24,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
+
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -45,11 +47,16 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void toDo2(View v){
-        Intent intent = new Intent(MainActivity.this, Main3Activity.class);
+        Intent intent = new Intent(MainActivity.this, Main5Activity.class);
         startActivity(intent);
     }
     public void toDo3(View v){
         Intent intent = new Intent(MainActivity.this, Main4Activity.class);
+        startActivity(intent);
+
+    }
+    public void toDo4(View v){
+        Intent intent = new Intent(MainActivity.this, ChatActivity.class);
         startActivity(intent);
 
     }

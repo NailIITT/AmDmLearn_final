@@ -1,4 +1,4 @@
-package com.example.guitar;
+package com.example.AmDmLearn;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
+
 
 public class Main4Activity extends AppCompatActivity {
     ImageButton image;
@@ -151,7 +152,7 @@ public class Main4Activity extends AppCompatActivity {
                         if(b==7){
                             correct.start();
                             image.setImageResource(R.drawable.em);
-                            b=0;
+                            b=(int) (Math.random()*8);
                         }                             else {
                             wrong.start();
                         }

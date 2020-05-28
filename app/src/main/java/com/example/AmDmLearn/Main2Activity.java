@@ -1,5 +1,4 @@
-package com.example.guitar;
-
+package com.example.AmDmLearn;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -13,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+
 
 
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
-         />
+        android:src="@mipmap/fon_foreground" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -33,7 +33,53 @@
         android:background="#C76316"
         app:layout_anchor="@+id/appBarLayout"
         app:layout_anchorGravity="center"
-        app:popupTheme="@style/AppTheme.PopupOverlay" />
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        />
+
+    <Button
+        android:id="@+id/Chords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_costum"
+        android:onClick="toDo"
+        android:text="@string/LearnChords"
+        android:textColor="#4D2202"
+
+        />
+
+    <Button
+        android:id="@+id/Songs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Chords"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_costum"
+        android:onClick="toDo2"
+        android:text="@string/Songs"
+        android:textColor="#4D2202" />
+
+    <Button
+        android:id="@+id/Game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Chords"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_costum"
+        android:onClick="toDo3"
+        android:text="@string/Game"
+        android:textColor="#4D2202" />
+    <Button
+        android:id="@+id/Chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Songs"
+        android:layout_marginTop="40dp"
+        android:onClick="toDo4"
+        android:text="Чат"
+        android:background="@drawable/button_costum"
+        android:textColor="#4D2202"/>
 
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

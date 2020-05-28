@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Guitar</string>
+    <string name="app_name">AmDmLearn</string>
     <string name="action_song">Песни</string>
     <string name="action_chord">Аккорды</string>
     <string name="action_info">Инфоромация</string>
@@ -8,4 +8,16 @@
     <string name="LearnChords">Учим Аккорды</string>
     <string name="Songs">Песни</string>
     <string name="Game">Игра</string>
+    <string name="Zvezda">Звезда по имени Солнце</string>
+    <string name="Sansara">Сансара</string>
+    <string name="Kukushka">Кукушка</string>
+    <string name="Lesnik">Лесник</string>
+    <string name="Nikto">Никто не услышит</string>
+    <string-array name="songsArray">
+        <item>@string/Zvezda</item>
+        <item>@string/Sansara</item>
+        <item>@string/Kukushka</item>
+        <item>@string/Lesnik</item>
+        <item>@string/Nikto</item>
+    </string-array>
 </resources>

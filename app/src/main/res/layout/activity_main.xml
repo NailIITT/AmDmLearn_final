@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity" android:id="@+id/activity_main">
 
 
     <com.google.android.material.appbar.AppBarLayout
@@ -67,6 +67,16 @@
         android:layout_marginBottom="40dp"
         android:onClick="toDo3"
         android:text="@string/Game"
+        android:background="@drawable/button_costum"
+        android:textColor="#4D2202"/>
+    <Button
+        android:id="@+id/Chat"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Songs"
+        android:layout_marginTop="40dp"
+        android:onClick="toDo4"
+        android:text="Чат"
         android:background="@drawable/button_costum"
         android:textColor="#4D2202"/>
 

@@ -1,4 +1,4 @@
-package com.example.guitar;
+package com.example.AmDmLearn;
 
 import org.junit.Test;
 
